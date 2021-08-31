@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6A6C6A"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/number1Text"
+        android:layout_width="365dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FFEB3B"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enternumber1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number2Text"
+        android:layout_width="365dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FFEB3B"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enternumber2"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="374dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="96dp"
+        android:background="#FFEB3B"
+        android:fontFamily="casual"
+        android:hint="Result"
+        android:text="Result = 0"
+        android:textAlignment="center"
+        android:textColorHint="#FF9800"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="311dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="208dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="75dp"
+            android:layout_height="76dp"
+            android:background="#4CAF50"
+            android:fontFamily="casual"
+            android:onClick="sum"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="44sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="75dp"
+            android:layout_height="76dp"
+            android:background="#4CAF50"
+            android:fontFamily="casual"
+            android:onClick="dedact"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="44sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="75dp"
+            android:layout_height="76dp"
+            android:background="#4CAF50"
+            android:fontFamily="casual"
+            android:onClick="multiply"
+            android:text="*"
+            android:textAlignment="center"
+            android:textSize="44sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="75dp"
+            android:layout_height="76dp"
+            android:background="#4CAF50"
+            android:fontFamily="casual"
+            android:onClick="divide"
+            android:text="/"
+            android:textAlignment="center"
+            android:textSize="44sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
